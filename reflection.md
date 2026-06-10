@@ -8,15 +8,31 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 - List at least two concrete bugs you noticed at the start  
   (for example: "the hints were backwards").
 
+The game wasn't actually playable. I could makes guesses but the hints were not accurate, leading me to continue to make incorrect guesses. Sometimes I was unable to restart the game. 
+
+- After tapping submit guess after out of guesses and starting a new game I am unable to submit a guess 
+
+- Should receive an error when inputting 0 but got a hint instead
+
+- 100 tells me to guess higher when 100 is the highest. I expected the answer to be correct or for the hint to tell me to go lower
+
+- Incorrect hints: Telling me to go higher even though my guess was higher than the secret
+
+- When restarting the game you hve 8 attempts, the # of attempts is inconsistent with the first time. The # of attempts should be the same. 
+
+- It says you have 1 attempt left but that you're out of guesses. 
+
+- When you submit a guess for the first time the attempts left number doesn’t decrease. 
+
 **Bug Reproduction Log**
 
 Document at least 3 bugs you found. Add rows as needed.
 
-| Input | Expected Behavior | Actual Behavior | Console Output / Error |
-|-------|-------------------|-----------------|------------------------|
-| | | | |
-| | | | |
-| | | | |
+| Input                   | Expected Behavior       | Actual Behavior               | Console Output / Error |
+|-------------------------|-------------------------|-------------------------------|------------------------|
+|  100                    | Correct or go lower.    | Go higher                     | None
+|  0                      | Invalid input.          | Go lower                      | None
+| Submit guess first time | Attempts decreases by 1 |  # of attempts stays the same | None 
 
 ---
 
