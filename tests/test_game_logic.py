@@ -63,3 +63,8 @@ def test_range_hard():
 def test_range_unknown_defaults():
     # Any unrecognized difficulty falls back to the default 1-100 range
     assert get_range_for_difficulty("Whatever") == (1, 100)
+
+def test_parse_guess_decimal():
+    # Guess "1.5" with range 1-100
+    # parse_guess returns (ok, guess_int, error_message)
+    assert parse_guess("1.5", 1, 100) == (True, 1, None)
